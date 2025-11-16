@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulces Típicos La Abejita</title>
+    <link rel="icon" type="image/png" href="https://media.discordapp.net/attachments/1424094153549287438/1439359575785476297/Friendly_Candy_Shop_Logo-removebg-preview.png?ex=691ae450&is=691992d0&hm=74b2bd1443f6d394589bf9f4d803032586abad6b986c345103cc7c2a8a48c3a3&=&format=webp&quality=lossless">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+            color: #2d3436;
+        }
+
+        header {
+            background: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 1.5rem 2rem;
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            color: #d63031;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: #636e72;
+            font-size: 1.1rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #fd79a8, #fdcb6e);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+        }
+
+        .product-info {
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .product-name {
+            font-size: 1.3rem;
+            color: #d63031;
+            font-weight: bold;
+        }
+
+        .about-section {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            margin: 4rem auto;
+            max-width: 900px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .about-section h2 {
+            color: #d63031;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .about-section p {
+            color: #2d3436;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        footer {
+            background: #2d3436;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        .contact-info {
+            margin-top: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-info a {
+            color: #fab1a0;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            color: #fdcb6e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://media.discordapp.net/attachments/1424094153549287438/1439359575785476297/Friendly_Candy_Shop_Logo-removebg-preview.png?ex=691ae450&is=691992d0&hm=74b2bd1443f6d394589bf9f4d803032586abad6b986c345103cc7c2a8a48c3a3&=&format=webp&quality=lossless" alt="Logo" class="logo">
+        <h1>Dulces Típicos de Guatemala</h1>
+        <p class="subtitle">Sabores tradicionales que endulzan tu vida</p>
+    </header>
+
+    <div class="container">
+        <div class="products">
+            <div class="product-card">
+                <div class="product-image">🍞</div>
+                <div class="product-info">
+                    <h3 class="product-name">Panito</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🥐</div>
+                <div class="product-info">
+                    <h3 class="product-name">Rosca</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🥥</div>
+                <div class="product-info">
+                    <h3 class="product-name">Conserva de Coco</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🌰</div>
+                <div class="product-info">
+                    <h3 class="product-name">Pepitoria</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🥜</div>
+                <div class="product-info">
+                    <h3 class="product-name">Manías</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🌾</div>
+                <div class="product-info">
+                    <h3 class="product-name">Ajonjolí</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🍬</div>
+                <div class="product-info">
+                    <h3 class="product-name">Bolitas de Tamarindo</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🍭</div>
+                <div class="product-info">
+                    <h3 class="product-name">Colochos</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🥥</div>
+                <div class="product-info">
+                    <h3 class="product-name">Cocadas</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🍬</div>
+                <div class="product-info">
+                    <h3 class="product-name">Canillitas de Leche</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🧈</div>
+                <div class="product-info">
+                    <h3 class="product-name">Cuadritos de Leche</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🍑</div>
+                <div class="product-info">
+                    <h3 class="product-name">Cuadritos de Zapote</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🍯</div>
+                <div class="product-info">
+                    <h3 class="product-name">Bocadillo Blanco</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🍫</div>
+                <div class="product-info">
+                    <h3 class="product-name">Bocadillo Negro</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🎀</div>
+                <div class="product-info">
+                    <h3 class="product-name">Despeinadas</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">☁️</div>
+                <div class="product-info">
+                    <h3 class="product-name">Espumillas</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">👔</div>
+                <div class="product-info">
+                    <h3 class="product-name">Corbatas</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🍩</div>
+                <div class="product-info">
+                    <h3 class="product-name">Nuegados</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🍭</div>
+                <div class="product-info">
+                    <h3 class="product-name">Paletas Típicas</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🎉</div>
+                <div class="product-info">
+                    <h3 class="product-name">Alboroto</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🍬</div>
+                <div class="product-info">
+                    <h3 class="product-name">Caramelos</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🍠</div>
+                <div class="product-info">
+                    <h3 class="product-name">Camotes</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🎃</div>
+                <div class="product-info">
+                    <h3 class="product-name">Chilacayotes</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🌿</div>
+                <div class="product-info">
+                    <h3 class="product-name">Higos</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🍏</div>
+                <div class="product-info">
+                    <h3 class="product-name">Manzanillas</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🌴</div>
+                <div class="product-info">
+                    <h3 class="product-name">Coyoles</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🥥</div>
+                <div class="product-info">
+                    <h3 class="product-name">Cocos</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🌰</div>
+                <div class="product-info">
+                    <h3 class="product-name">Mazapán</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-section">
+        <h2>Sobre Nosotros</h2>
+        <p>Esta historia comenzó en 1968, con dos personas llenas de sueños: Esteban Bal y María Cumez. Ellos recorrían distintos lugares de Guatemala vendiendo panito y rosca, llevando con cada venta no solo sabor, sino también esperanza. Su esfuerzo diario, bajo el sol o la lluvia, sembró las raíces de una tradición que hoy endulza corazones.</p>
+        <p>Con el paso del tiempo, decidieron ir más allá. Prueba tras prueba, con paciencia y amor, empezaron a crear nuevos dulces hasta encontrar ese sabor perfecto que hablaba de su tierra, su familia y su lucha. No estaban solos: junto a ellos crecieron sus cuatro hijas y un hijo, quienes heredaron el mismo espíritu de trabajo y cariño por lo que hacen.</p>
+        <p>Así, entre risas, trabajo y el aroma del azúcar, nació una historia que no solo cuenta cómo se hicieron dulces, sino cómo una familia convirtió el esfuerzo en sabor y el amor en tradición guatemalteca.</p>
+    </div>
+
+    <footer>
+        <h3>Contáctanos</h3>
+        <div class="contact-info">
+            <p>📞 Teléfono: <a href="tel:+5242165881">+502 4216-5881</a></p>
+            <p>📧 Email: <a href="mailto:dulcestipicosabejita@gmail.com">dulcestipicosabejita@gmail.com</a></p>
+        </div>
+        <p style="margin-top: 2rem;">&copy; 2025 Dulces Típicos de La Abejita - Todos los derechos reservados a Esteban Xocop Full-stack developer</p>
+    </footer>
+</body>
+</html>
